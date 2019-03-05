@@ -1,0 +1,68 @@
+Exercises: Grab Bag
+1. All of them are equivalent.
+2. d)
+3. a) f = \n -> n + 1
+   b) addFive = \x -> \y -> (if x > y then y else x) + 5
+   c) mflip f x y = f y x
+
+Exercises: Variety Pack
+1. a) k :: (a, b) -> a
+   b) k2 :: [Char]
+      -- | No, k1 and k3 have type Num a => a
+   c) k1 and k3 will.
+2. f (a, b, c) (d, e, f) = ((a, d), (c, f))
+
+Exercises: Case Practice
+1. See case-practice.hs
+2. See case-practice.hs
+3. See case-practice.hs
+
+Exercises: Artful Dodgy
+-- | See artful-dodgy.hs
+1. 1
+2. 11
+3. 22
+4. 21
+5. 12
+6. 11
+7. 21
+8. 21
+9. 22
+10. 31
+11. 23
+
+Exercises: Guard Duty
+1. Every student is going to flunk.
+2. It won't work as expected. It will first match y >= 7 and give a 'C' to a 90.
+3. b)
+4. It can take any list whose contained type supports comparison.
+5. pal :: Eq a => [a] -> Bool
+6. c)
+7. It can take any numeric type that supports Ord.
+8. numbers :: (Num a, Ord a, Num b) => a -> b
+
+Chapter Exercises
+Multiple choice
+1. d)
+2. b)
+3. d)
+4. b)
+5. a)
+
+Let's write code
+1. a) tensDigit x = snd d
+          where d = x `divMod` 10
+   b) Yes.
+   c) hunsD = (`mod` 10) . (`div` 100)
+2. -- | With case expression:
+   foldBool a b c
+     = case c of
+           True  -> a
+           False -> b
+   -- | With guards
+   foldBool a b c | c         = a
+                  | otherwise = b
+3. g aToB (a, c) = (aToB a, c)
+4. See exercises-4-5-6.hs
+5. See exercises-4-5-6.hs
+6. See exercises-4-5-6.hs

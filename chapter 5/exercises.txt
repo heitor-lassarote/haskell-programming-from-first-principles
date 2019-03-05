@@ -1,0 +1,117 @@
+Exercises: Type Matching
+a) not    :: Bool  -> Bool
+b) length :: [a]   -> Int
+c) concat :: [[a]] -> [a]
+d) head   :: [a]   -> a
+e) (<)    :: Ord a => a -> a -> Bool
+
+Exercises: Type Arguments
+1. a)
+2. c)
+3. d)
+4. c)
+5. a)
+6. e)
+7. d) *
+8. a)
+9. c)
+
+* https://github.com/dwayne/haskell-programming/blob/master/ch5/ex2.txt
+Exercises: Parametricity
+1. Yeah, I can't really think of anything.
+2. idl a b = id a
+   idr a b = id b
+3. We can only define snd a b = b. We'd need more constraints to be able to work
+   with these values.
+
+Exercises: Apply Yourself
+1. myConcat :: [Char] -> [Char]
+2. myMult   :: Fractional a => a -> a
+3. myTake   :: Int -> [Char]
+4. (>)      :: Int -> Bool
+5. (<)      :: Char -> Bool
+
+Chapter Exercises
+Multiple choice
+1. c)
+2. a)
+3. b)
+4. c)
+
+Determine the type
+1. a) 54 :: Num a => a
+   b) (0,"doge") :: Num a => (a, [Char])
+   c) (0,"doge") :: (Integer, [Char])
+   d) False :: Bool
+   e) 5 :: Int
+   f) False :: Bool
+2. w :: Num a => a
+3. z :: Num a => a -> a
+4. f :: Fractional a => a
+5. f :: [Char]
+
+Does it compile?
+1. bigNum has type Num a => a, and therefore is not a function. However, wahoo
+   attempts to compose 10 with bigNum, which won't work, because 10 can't be
+   applied to it. A possible fix:
+   bigNum = (^) 5
+   wahoo = bigNum $ 10
+2. The expression works fine.
+3. The compiler will squawk at the definition of c, since 10 can't be applied to
+   5. Again, it will do the same at d. Possible fix:
+   a = (+)
+   b = 5
+   c = a 10
+   d = c b
+4. b is not in scope of a and c is not in scope of b, so it won't compile.
+
+Type variable of specific type constructor?
+1. OK, got it.
+2. zed  [0] = Fully polymorphic;
+   Zed  [1] = Concrete type;
+   Blah [2] = Concrete type.
+3. a [0] = Fully polymorphic;
+   b [1] = Constrained polymorphic (Enum);
+   C [2] = Concrete type.
+4. f [0] = Fully polymorphic;
+   g [1] = Fully polymorphic;
+   C [2] = Concrete type.
+
+Write a type signature
+1. functionH :: [a] -> a
+2. functionC :: Ord a => a -> a -> Bool
+3. functionS :: (a, b) -> b
+
+Given a type, write the function
+1. i :: a -> a
+   i x = x
+2. c :: a -> b -> a
+   c a _ = a
+3. c'' :: b -> a -> b
+   c'' b _ = b
+   -- | Yes, they are the same thing.
+4. c' :: a -> b -> b
+   c' _ b = b
+5. r :: [a] -> [a]
+   -- | As ID
+   r x = x
+   -- | Reverse
+   r x = reverse x
+   -- | You can also use drop, take etc
+6. co :: (b -> c) -> (a -> b) -> a -> c
+   co bToC aToB a = bToC $ aToB $ a
+7. a :: (a -> c) -> a -> a
+   a _ a' = a'
+8. a' :: (a -> b) -> a -> b
+   a' aToB a'' = aToB a''
+   
+Fix it
+1. See sing.hs
+2. See sing.hs
+3. See arith3broken.hs
+
+Type-Kwon-Do
+1. h = g . f
+2. e = w . q
+3. xform (x, y) = (xz x, yz y)
+4. munge xToY yToWZ x = fst $ yToWZ $ xToY $ x

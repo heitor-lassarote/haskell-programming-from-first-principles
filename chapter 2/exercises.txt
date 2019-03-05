@@ -1,0 +1,74 @@
+Exercises: Comprehension Check
+1. let half x = x / 2
+   let square x = x * x
+2. let circleArea r = 3.14 * r * r
+3. let circleArea r = pi * r * r
+
+Exercises: Parenthesis and Association
+1. Yes. (*) has higher precedence than (+), so a) evaluates to 8 + (7 * 9).
+2. No. Both expressions are the same for the same reason as exercise 1.
+3. Yes. Consider that (/) has the same precedence as (*) and read exercise 1's
+   answer.
+
+Exercises: Heal the Sick
+1. let area x = 3.14 * (x * x) -- | Or even better: use pi.
+2. let double x = x * 2
+3. x = 7
+   y = 10
+   f = x + y
+
+Exercises: A Head Code
+1. 5
+2. 25
+3. 30
+4. 6
+
+1. exercise1 = x * 3 + y
+     where x = 3
+           y = 1000
+2. exercise2 = x * 5
+     where y = 10
+           x = 10 * 5 + y
+3. exercise3 = z / x + y
+     where x = 7
+           y = negate x
+           z = y * 10
+
+Chapter Exercises
+Parenthesization
+1. 2 + (2 * 3) - 1
+2. (10^) (1 + 1)
+3. (2 ^ 2) * (4 ^ 5) + 1
+
+Equivalent expressions
+1. 2
+   2
+2. 100
+   100
+3. 363
+   -363
+4. 33
+   33.333333333
+5. 28
+   46
+   
+More fun with functions
+let z = 7
+let y = z + 8
+let x = y ^ 2
+let waxOn = x * 5
+
+1. -- | z = 
+   -- | y = 15
+   -- | x = 225
+   -- | waxOn = 1125
+   10 + waxOn = 1135
+   (+10) waxOn = 1135
+   (-) 15 waxOn = -1110
+   (-) waxOn 15 = 1110
+2. let triple x = x * 3
+3. I think it will print 1125 * 3 which is 3375 (and it in-fact does).
+4. See more-fun-with-functions.hs
+5. See more-fun-with-functions.hs
+6. See more-fun-with-functions.hs
+7. 30 and -150.

@@ -1,0 +1,66 @@
+Exercises: Eq Instances
+1. See eqinstances.hs
+2. See eqinstances.hs
+3. See eqinstances.hs
+4. See eqinstances.hs
+5. See eqinstances.hs
+6. See eqinstances.hs
+7. See eqinstances.hs
+
+Exercises: Tuple Experiment
+1. I guess quotRem returns a tuple (a, a) where fst a is the quotient of the
+   function inputs, and snd a is the remainder of them. The same for divMod,
+   except that snd a is the mod of the numbers.
+   
+Put on your thinking cap
+Because Fractional a already inherits Num a, so writing Num a is redundant.
+
+Exercises: Will They Work?
+1. 5
+2. LT
+3. Error: Can't compare these.
+4. False.
+
+Chapter Exercises
+1. c)
+2. b)
+3. a)
+4. c)
+5. a)
+
+Does it typecheck?
+1. No, because Person doesn't derive Show.
+2. No, because Mood doesn't derive Eq.
+3. a) Either Blah or Woot.
+   b) It will not compile, as 9 is not Mood.
+   c) It will not compile, as Mood doesn't derive Ord.
+4. Yes.
+
+Given a datatype declaration, what can we do?
+1. Won't typecheck. It should be Papu (Rocks "chases") (Yeah True), as the types
+   String and Bool should be constructed with the respective constructors.
+2. Typechecks.
+3. Typechecks.
+4. Won't typecheck, as Papu doesn't derive Ord.
+
+Match the types
+1. It won't work, as the type constraint for Num is necessary for 1.
+2. It won't work, as there must be a type constraint for at least Fractional.
+3. It will work.
+4. It works. If you see the output for the hint, it says Float is a RealFrac.
+5. It will work.
+6. It will work.
+7. It won't work, because myX was constrained to be an Int, and the type a is
+   fully polymorphic. Therefore, sigmund can only have Int -> Int type.
+8. It also won't work. Again, Int is already a concrete type, so sigmund' can't
+   return a type that is more polymorphic, since Int is already constrained.
+9. It will work.
+10. It will work.
+11. It won't work, because mySort was already constrained to the concrete type
+    Char -> Char. signifier can't use a more polymorphic type.
+
+Type-Kwon-Do Two: Electric Typealoo
+1. chk :: Eq b => (a -> b) -> a -> b -> Bool
+   chk aToB a b = (aToB a) == b
+2. arith :: Num b => (a -> b) -> Integer -> a -> b
+   arith aToB i a = aToB a + fromInteger i

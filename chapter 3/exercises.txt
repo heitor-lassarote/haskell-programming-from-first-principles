@@ -1,0 +1,38 @@
+Exercises: Scope
+1. Yeah.
+2. Nope. h is not defined.
+3. No. d is not in scope for r.
+4. Yes.
+
+Exercises: Syntax Errors
+1. Change ++ to (++).
+2. Change simple quotes ('') to double quotes ("").
+3. No errors.
+
+Exercise: Fix the Print3Broken code: See print3broken.hs
+
+Chapter Exercises
+Reading syntax
+1. a) OK.
+   b) Surround ++ with parenthesis.
+   c) OK.
+   d) Add a " before ].
+   e) "hello" !! 4
+   f) OK.
+   g) take 4 "lovely"
+   g) OK.
+2. a) results in d).
+   b) results in c).
+   c) results in e).
+   d) results in a).
+   e) results in b).
+   
+Building functions
+1. a) "Curry is awesome" ++ "!"
+   b) "Curry is awesome!" !! 4
+   c) last $ words "Curry is awesome!"
+2. See building-functions.hs
+3. See building-functions.hs
+4. See building-functions.hs
+5. See building-functions.hs
+6. See reverse.hs

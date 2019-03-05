@@ -1,0 +1,76 @@
+Intermission: Equivalence Exercises
+1. λxy.xz  -> λmn.mz  -> b) (z is not bound, so we can't replace it)
+2. λxy.xxy -> λab.aab -> λa.(λb.aab) -> c)
+3. λxyz.zx -> tos.st  -> b)
+
+1.11 Chapter Exercises
+Combinators
+1. Yes—All variables are bound.
+2. No—z is free.
+3. Yes—All variables are bound.
+4. Yes—All variables are bound.
+5. No—z is free.
+
+Normal form or diverge?
+1. λx.xxx
+   The expression is already in normal form.
+2. (λz.zz)(λy.yy)
+   ([z:=(λy.yy)].zz)
+   (λy.yy)(λy.yy)
+   Diverge.
+3. (λx.xxx)z
+   (λ[x:=z].xxx)
+   zzz
+   Normal form.
+   
+Beta reduce
+1. (λabc.cba)zz(λwv.w)
+   ([a:=z].λb.λc.cba)z(λwv.w)
+   (λbc.cbz)z(λwv.w)
+   ([b:=z].λc.cbz)(λwv.w)
+   (λc.czz)(λwv.w)
+   ([c:=(λwv.w)].czz)
+   (λwv.w)zz
+   ([w=z].λv.w)z
+   (λv.z)z
+   z
+2. (λx.λy.xyy)(λa.a)b
+   ([x:=(λa.a)].λy.xyy)b
+   (λy.(λa.a)yy)b
+   ([y:=b].(λa.a)yy)
+   (λa.a)bb
+   ([a:=b].a)b
+   bb
+3. (λy.y)(λx.xx)(λz.zq)
+   ([y=(λx.xx)].y)(λz.zq)
+   (λx.xx)(λz.zq)
+   ([x:=(λz.zq)].xx)
+   (λz.zq)(λt.tq)
+   ([z=(λt.tq)].zq)
+   (λt.tq)q
+   qq
+4. (λz.z)(λz.zz)(λz.zy)
+   (λz.z)(λx.xx)(λw.wy)
+   (λx.xx)(λw.wy)
+   (λw.wy)(λw.wy)
+   (λw.wy)(λv.vy)
+   (λv.vy)y
+   yy
+5. (λx.λy.xyy)(λy.y)y
+   (λx.(λy.xyy))(λy.y)y
+   (λx.(λy.xyy))(λt.t)y
+   (λy.(λt.t)yy)y
+   (λt.t)yy
+   yy
+6. (λa.aa)(λb.ba)c
+   (λt.tt)(λb.ba)c
+   (λb.ba)(λb.ba)c
+   (λb.ba)(λx.xa)c
+   (λx.xa)ac
+   aac
+7. (λxyz.xz(yz))(λx.z)(λx.a)
+   (λxyk.xk(yk))(λx.z)(λx.a)
+   (λxyk.xk(yk))(λt.z)(λu.a)
+   (λyk.(λt.z)k(yk))(λu.a)
+   (λk.(λt.z)k((λu.a)k))
+   (λk.za)
