@@ -1,0 +1,51 @@
+Intermission: Exercise
+applyTimes 5 (+1) 5
+(+1) (applyTimes 4 (+1) 5)
+(+1) ((+1) applyTimes 3 (+1) 5)
+(+1) ((+1) ((+1) applyTimes 2 (+1) 5))
+(+1) ((+1) ((+1) ((+1) applyTimes 1 (+1) 5)))
+(+1) ((+1) ((+1) ((+1) ((+1) applyTimes 0 (+1) 5))))
+(+1) ((+1) ((+1) ((+1) ((+1) 5))))
+(+1) ((+1) ((+1) ((+1) 6)))
+(+1) ((+1) ((+1) 7))
+(+1) ((+1) 8)
+(+1) 9
+10
+
+Chapter Exercises
+Review of types
+1. d)
+2. b)
+3. d)
+4. b)
+
+Reviewing currying
+1. "woops mrow woohoo!"
+2. "1 mrow haha"
+3. "woops mrow 2 mrow haha"
+4. "woops mrow blue mrow haha"
+5. "pink mrow haha mrow green mrow woops mrow blue"
+6. "are mrow Pugs mrow awesome"
+
+Recursion
+1. dividedBy 15 2
+   go 15 2 0
+   go 13 2 1
+   go 11 2 2
+   go  9 2 3
+   go  7 2 4
+   go  5 2 5
+   go  3 2 6
+   go  1 2 7
+   (7, 1)
+2. See recursion.hs
+3. See recursion.hs
+
+Fixing dividedBy
+See recursion.hs
+
+McCarthy 91 function
+See recursion.hs
+
+Numbers into words
+See word-number.hs
