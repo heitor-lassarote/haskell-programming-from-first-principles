@@ -1,0 +1,97 @@
+Exercise: EnumFromTo
+See my-enum.hs
+
+Exercises: Thy Fearful Symmetry
+1. See my-words.hs
+2. See poem-lines.hs
+3. See split-by.hs
+
+Exercises: Comprehend Thy Lists
+Input:  [x | x <- mySqr, rem x 2 == 0]
+Output: [4, 16, 36, 64, 100]
+Input:  [(x, y) | x <- mySqr, y <- mySqr, x < 50, y > 50]
+Output: [
+         (1, 64), (1, 81), (1, 100), (4, 64), (4, 81), (4, 100), (9, 64),
+         (9, 81), (9, 100), (16, 64), (16, 81), (16, 100), (25, 64), (25, 81),
+         (25, 100), (36, 64), (36, 81), (36, 100), (49, 64), (49, 81), (49, 100)
+        ]
+Input:  take 5 [(x, y) | x <- mySqr, y <- mySqr, x < 50, y > 50]
+Output: [(1, 64), (1, 81), (1, 100), (4, 64), (4, 81)]
+
+Given the above, what do you think this function would do:
+Prelude> let myString xs = [x | x <- xs, elem x "aeiou"]
+Answer: It would return, in sequence, a String containing only the lowercase
+        vowels of the input xs.
+
+Exercises: Square Cube
+1. [(x, y) | x <- mySqr, y <- myCube]
+2. [(x, y) | x <- mySqr, y <- myCube, x < 50, y < 50]
+3. length [(x, y) | x <- mySqr, y <- myCube, x < 50, y < 50]
+
+Exercises: Bottom Madness
+Will it blow up?
+1. ⊥. If you write that on GHCi, for example, it will force the list to be
+   generated and printed, which will evaluate x^undefined.
+2. Return. The expression only takes the first argument, which is 1^2.
+3. ⊥. The function must evaluate the entire list; the spines in order to access
+   every elements and the elements themselves, in order to sum them. That said,
+   it will throw because of the undefined.
+4. Return. length doesn't need to evaluate the elements themselves, only the
+   spine, and so it will not evaluate the undefined.
+5. ⊥. As stated above, length only evaluates the spine, however, in this case
+   undefined is an element of the spine, and so the evaluation will be bottom.
+6. Return. Haskell expressions are evaluated lazily, and so filter will only
+   evaluate up to the undefined element if it needs to. In this case, filter
+   only needs to evaluate until it reaches the first even element, which is 2.
+7. ⊥. As stated in question 6, Haskell will evaluate the list up to the first
+   even element found. As the list contains no even element, it will eventually
+   reach undefined and be bottom.
+8. Return. See question 6.
+9. Return. See question 8.
+10. ⊥. It will evaluate the first 3 odd elements, but in doing so, it will reach
+    the undefined element and be bottom.
+
+Intermission: Is it in normal form?
+1. NF. All values have been fully evaluated.
+2. WHNF. The outermost expression is a data constructor and is not fully
+   evaluated.
+3. Neither. The outermost expression is a function, not a data constructor.
+4. Neither. The outermost expression is a function, not a data constructor.
+5. Neither. The outermost expression is a function, not a data constructor.
+6. Neither. The outermost expression is a function, not a data constructor.
+7. WHNF. The (,) is a data constructor and has not been fully evaluated.
+
+Exercise: More Bottoms
+1. ⊥. The first element is undefined, and Haskell will try to apply (+1) to it.
+2. Return. take 1 won't evaluate the second element.
+3. ⊥. The second element is undefined, and take 2 will force it to be evaluated.
+4. For each element, it will check whether it is contained in "aeiou", that is,
+   test whether if it's a lowercase vowel. By doing it element-by-elements, it
+   will create a list where each element is True if it's a lowercase vowel,
+   False otherwise. Its type is String -> [Bool].
+5. a) [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+   b) [1, 10, 20]
+   c) [15, 15, 15]
+6. map (\x -> bool x (-x) (x == 3)) [1..10]
+
+Exercises: Filtering
+1. multiples = [x | x <- [1..30], x `mod` 3 == 0]
+2. length $ multiples
+3. See my-filter.hs
+
+Zipping exercises
+1. See my-zip.hs
+
+Chapter Exercises
+1. isUpper and isLower are both of type Char -> Bool.
+2. See my-char.hs
+3. See my-char.hs
+4. See my-char.hs
+5. See my-char.hs
+6. I swear I did it composed and pointfree the first time. See my-char.hs
+
+Ciphers
+See ciphers.hs
+
+Writing your own standard functions
+See my-prelude.hs
