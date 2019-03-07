@@ -1,0 +1,48 @@
+Exercises: Understanding Folds
+1. b) and c)
+2. foldl (flip (*)) 1 [1..3] -- flip (*) is the same as (*) for integers
+   foldl (*) ((*) 1 1) [2, 3]
+   foldl (*) ((*) 1 2) [3]
+   foldl (*) ((*) 2 3) []
+   6
+3. c)
+   -- | n.b.: Both folds traverse the spine from left-to-right, as it's the only
+   -- | way to traverse the spine of list, since it's how it's built. The only
+   -- | difference is that foldr goes to the end of the recursion and starts
+   -- | applying the operation (associates) from right-to-left, while foldl will
+   -- | apply the function from left-to-right.
+4. a)
+5. a) foldr (++) "" ["woot", "WOOT", "woot"]
+   b) import Data.Char
+      foldr max (chr 0) "fear is the little death"
+   c) foldr (&&) True [False, True]
+   d) foldr (||) False [False, True]
+      -- | If the seed to the foldr is True then the result will always be True.
+   e) foldl (flip ((++) . show)) "" [1..5]
+   f) foldr (flip const) 'a' [1..5]
+   g) foldr (flip const) 0 "tacos"
+   h) foldl const 0 "burritos"
+   i) foldl const 'z' [1..5]
+
+Exercises: Database Processing
+1. See database.hs
+2. See database.hs
+3. See database.hs
+4. See database.hs
+5. See database.hs
+
+Scans Exercises
+1. See scans.hs
+2. See scans.hs
+3. See scans.hs
+
+Chapter Exercises
+Warm-up and review
+1. See stop-vowel-stop.hs
+2. seekritFunc :: String -> Int
+   The function gets the average number of letters in each word of x.
+3. Sure:
+   seekritFunc x = (fromIntegral (sum (map length (words x)))) / (fromIntegral (length (words x)))
+
+Rewriting functions using folds
+See my-folds.hs

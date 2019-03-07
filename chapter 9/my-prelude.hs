@@ -1,4 +1,4 @@
-module MyBool where
+module MyPrelude where
 
 -- | Exercise 1
 myOr :: [Bool] -> Bool
