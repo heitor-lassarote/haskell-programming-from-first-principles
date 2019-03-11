@@ -1,0 +1,145 @@
+Exercises: Dog Types
+1. It's a data constructor, and Husky and Mastiff are the data constructors.
+2. Doggies is a * -> *.
+3. Doggies String is *.
+4. Num a => Doggies a.
+5. Doggies Integer.
+6. Doggies String.
+7. It's both, actually! It depends on whether you want it at type or term level.
+8. doge -> DogueDeBordeaux doge
+9. DogueDeBordeaux String
+
+Exercises: Vehicles
+1. myCar :: Vehicle
+2. See vehicles.hs
+3. See vehicles.hs
+4. It will throw an exception, as it's ⊥.
+5. See vehicles.hs
+
+Exercises: Cardinality
+1. There is only one constant, so the cardinality is 1.
+2. There are three constants, so the cardinality is 3.
+3. The cardinality of a IntN is 2^N, so Int16 has a cardinality of 2^16=65'536.
+4. An Int is a 64-bits variable, so it has a cardinality of
+   2^64=9'223'372'036'854'775'807.
+   Integer is arbitrary-size, and is not bounded. Its cardinality is infinite.
+5. See the answer to question 3. The reason for this is because how integrals
+   are stored internally in the computer's memory. An Int8 takes 8 bits to store
+   (a bit is a value of either 0 or 1), and so we have that, for each bit, there
+   are two ways of storing them. For example, a 2-bit value can be stored as 00,
+   01, 10 or 11. So there is a total of 2^2=4 values. As for 3-bit, we'd have
+   000, 001, 010, 011, 100, 101, 110, 111, so a total of 2^3=8 values. By the
+   same principle, a 8-bit (Int8) value would have 2^8 possibilities = 256.
+
+Exercises: For Example
+1. The type is Example. You can't request the type of Example, because it has a
+   kind and not a type. GHCi barks at you when you do.
+2. It shows what data constructors exist for the type and what typeclasses it
+   implements. GHCi says Example has Show.
+3. It becomes Int -> Example.
+
+Exercises: Logic Goats
+1. See logic-goats.hs
+2. See logic-goats.hs
+3. See logic-goats.hs
+
+Exercises: Pity the Bool
+1. The cardinality is 4. We have the possibilities to be either Big or Small,
+   and Bool can be either True or False. So we have 2+2=4 possibilities.
+2. The cardinality is 2^8+2, which is 258. If you try to create a number that is
+   greater than 127, it will wrap back to -128. GHCi will also complain about
+   this overflow.
+   A similar thing if you try to create a number smaller than -128. It will wrap
+   to 127 or smaller, and GHCi will issue a warning.
+
+Exercises: How Does Your Garden Grow?
+1. data Garden = Gardenia Gardener
+               | Daisy Gardener
+               | Rose Gardener
+               | Lilac Gardener
+               deriving Show
+
+Exercise: Programmers
+See programmers.hs
+
+Exponentiation in what order?
+convert :: Quantum -> Bool
+
+-- | 1
+convert No   = False
+convert Yes  = False
+convert Both = False
+
+-- | 2
+convert No   = False
+convert Yes  = False
+convert Both = True
+
+-- | 3
+convert No   = False
+convert Yes  = True
+convert Both = False
+
+-- | 4
+convert No   = False
+convert Yes  = True
+convert Both = True
+
+-- | 5
+convert No   = True
+convert Yes  = False
+convert Both = False
+
+-- |  6
+convert No   = True
+convert Yes  = False
+convert Both = True
+
+-- | 7
+convert No   = True
+convert Yes  = True
+convert Both = False
+
+-- | 8
+convert No   = True
+convert Yes  = True
+convert Both = True
+
+Exercises: The Quad
+1. 2*4*4=32
+2. 4*4=16
+3. 4^4=256
+4. 2*2*2=8
+5. (2^2)^2=2^4=16
+6. (4^4)^2=65536 n.b.: Functions are right-associative. To solve this problem,
+   remember that the function type is Bool -> (Quad -> Quad) due to currying,
+   and recall that Quad -> Quad has 4^4=256 possible implementations. Using the
+   formula b^a, we then have that Bool -> (Quad -> Quad) will have a=2 and b=256
+   and therefore has 256^2=65536 possible implementations.
+
+Write map for BinaryTree
+See binary-tree.hs
+
+Convert binary trees to lists
+See binary-tree.hs
+
+Chapter exercises
+1. a)
+2. c)
+3. b)
+4. c)
+
+Ciphers
+See ciphers.hs
+
+As-patterns
+See as-patterns.hs
+
+Language exercises
+See language.hs
+
+Phone exercise
+See phone.hs
+
+Hutton's Razor
+See huttons-razor.hs
