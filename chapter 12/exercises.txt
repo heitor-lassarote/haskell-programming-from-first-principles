@@ -1,0 +1,25 @@
+Chapter Exercises
+1. a :: *
+2. a :: *
+   f :: * -> *
+
+String processing
+See string-processing.hs
+
+Validate the word
+See validate.hs
+
+It’s only Natural
+See natural.hs
+
+Small library for Maybe
+See maybe-lib.hs
+
+Small library for Either
+See either-lib.hs
+
+Write your own iterate and unfoldr
+See unfold.hs
+
+Finally something other than a list!
+See binary-tree.hs
