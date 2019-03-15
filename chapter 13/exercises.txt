@@ -8,3 +8,13 @@ Intermission: Check your understanding
    b) Filesystem.writeFile
    c) Control.Monad
 
+Chapter exercises
+Hangman game logic
+See hangman.
+
+Modifying code
+1. See ciphers.hs
+2. See palindrome.hs
+3. See palindrome.hs
+4. See person.hs 
+
