@@ -1,0 +1,47 @@
+Exercises: Be Kind
+1. a :: *
+2. b :: * -> *
+   T :: * -> *
+3. c :: * -> * -> *
+
+Wait, how does that even typecheck?
+Given the type signatures:
+    (.)  :: (b -> c) -> (a -> b) -> a -> c
+    fmap :: Functor f => (m -> n) -> f m -> f n
+    fmap :: Functor g => (x -> y) -> g x -> g y
+And the definition of (.):
+    (g . f) a = g (f a)
+We have:
+    a :: m -> n
+And:
+    fmap a :: Functor f => (m -> n) -> f m -> f n
+So:
+    fmap (fmap a) :: (Functor f, Functor g)
+                  => (x -> y)
+                  -> g (f x)
+                  -> g (f y)
+
+Exercises: Heavy Lifting
+1. a = fmap (+1) $ read "[1]" :: [Int]
+2. b = ((fmap . fmap) (++ "lol")) (Just ["Hi,", "Hello"])
+3. c = fmap (*2) (\x -> x - 2)
+4. d = (fmap ((return '1' ++) . show)) (\x -> [x, 1..3])
+5. e :: IO Integer
+   e = let ioi = readIO "1" :: IO Integer
+           changed = fmap (read . ("123" ++) . show) ioi
+       in fmap (* 3) changed
+
+Chapter Exercises
+1. No. Bool doesn't have * -> * kind.
+2. instance Functor BoolAndSomethingElse where...
+3. instance Functor BoolAndMaybeSomethingElse where...
+4. No. Functor expects kind * -> *, but Mu has kind (* -> *) -> *.
+5. No. D has kind *.
+
+1. data Sum b a
+2. data Company a c b
+3. data More b a
+
+Write Functor instances for the following datatypes.
+See functors.hs
+
