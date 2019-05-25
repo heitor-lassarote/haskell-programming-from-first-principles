@@ -1,0 +1,14 @@
+Exercise: Fixer Upper
+1. const <$> Just "Hello" <*> pure "World"
+2. (,,,) <$> Just 90 <*> Just 10 <*> Just "Tierness" <*> pure [1, 2, 3]
+
+Chapter Exercises:
+1. pure  :: a -> [a]
+   (<*>) :: [(a -> b)] -> [a] -> [b]
+2. pure  :: a -> IO a
+   (<*>) :: IO (a -> b) -> IO a -> IO b
+3. pure  :: a -> (t, a)
+   (<*>) :: (t, (a -> b)) -> (t, a) -> (t, b)
+4. pure  :: a -> (t -> a)
+   (<*>) :: (t -> (a -> b)) -> (t -> a) -> (t -> b)
+

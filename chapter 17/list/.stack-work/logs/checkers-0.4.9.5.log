@@ -1,0 +1,21 @@
+Configuring checkers-0.4.9.5...
+Building checkers-0.4.9.5...
+Preprocessing library checkers-0.4.9.5...
+[ 1 of 15] Compiling Test.QuickCheck.Utils ( src/Test/QuickCheck/Utils.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Utils.o )
+[ 2 of 15] Compiling Test.QuickCheck.Instances.Tuple ( src/Test/QuickCheck/Instances/Tuple.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Instances/Tuple.o )
+[ 3 of 15] Compiling Test.QuickCheck.Instances.Maybe ( src/Test/QuickCheck/Instances/Maybe.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Instances/Maybe.o )
+[ 4 of 15] Compiling Test.QuickCheck.Instances.Array ( src/Test/QuickCheck/Instances/Array.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Instances/Array.o )
+[ 5 of 15] Compiling Test.QuickCheck.Checkers ( src/Test/QuickCheck/Checkers.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Checkers.o )
+[ 6 of 15] Compiling Test.QuickCheck.Later ( src/Test/QuickCheck/Later.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Later.o )
+[ 7 of 15] Compiling Test.QuickCheck.Bottoms ( src/Test/QuickCheck/Bottoms.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Bottoms.o )
+[ 8 of 15] Compiling Control.Monad.Extensions ( src/Control/Monad/Extensions.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Control/Monad/Extensions.o )
+[ 9 of 15] Compiling Test.QuickCheck.Instances.Eq ( src/Test/QuickCheck/Instances/Eq.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Instances/Eq.o )
+[10 of 15] Compiling Test.QuickCheck.Instances.Char ( src/Test/QuickCheck/Instances/Char.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Instances/Char.o )
+[11 of 15] Compiling Test.QuickCheck.Classes ( src/Test/QuickCheck/Classes.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Classes.o )
+[12 of 15] Compiling Test.QuickCheck.Instances.Num ( src/Test/QuickCheck/Instances/Num.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Instances/Num.o )
+[13 of 15] Compiling Test.QuickCheck.Instances.List ( src/Test/QuickCheck/Instances/List.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Instances/List.o )
+[14 of 15] Compiling Test.QuickCheck.Instances.Ord ( src/Test/QuickCheck/Instances/Ord.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Instances/Ord.o )
+[15 of 15] Compiling Test.QuickCheck.Instances ( src/Test/QuickCheck/Instances.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Test/QuickCheck/Instances.o )
+Installing library in
+/home/heitor/.stack/snapshots/x86_64-linux/lts-9.21/8.0.2/lib/x86_64-linux-ghc-8.0.2/checkers-0.4.9.5-Dhm0rh3Bh7qFXgfQ8Df9YH
+Registering checkers-0.4.9.5...
