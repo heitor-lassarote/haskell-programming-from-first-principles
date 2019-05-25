@@ -1,0 +1,10 @@
+Configuring scanner-0.3...
+Preprocessing library for scanner-0.3..
+Building library for scanner-0.3..
+[1 of 5] Compiling Prelude          ( compat/Prelude.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Prelude.o )
+[2 of 5] Compiling Data.Either      ( compat/Data/Either.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/Either.o )
+[3 of 5] Compiling Scanner.OctetPredicates ( lib/Scanner/OctetPredicates.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Scanner/OctetPredicates.o )
+[4 of 5] Compiling Scanner.Internal ( lib/Scanner/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Scanner/Internal.o )
+[5 of 5] Compiling Scanner          ( lib/Scanner.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Scanner.o )
+Installing library in /home/heitor/.stack/snapshots/x86_64-linux/lts-13.22/8.6.5/lib/x86_64-linux-ghc-8.6.5/scanner-0.3-8TxnYkhZmUo90nNRx7KybV
+Registering library for scanner-0.3..

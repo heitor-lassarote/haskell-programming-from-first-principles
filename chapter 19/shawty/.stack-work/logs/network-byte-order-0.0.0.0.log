@@ -1,0 +1,6 @@
+Configuring network-byte-order-0.0.0.0...
+Preprocessing library for network-byte-order-0.0.0.0..
+Building library for network-byte-order-0.0.0.0..
+[1 of 1] Compiling Network.ByteOrder ( Network/ByteOrder.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Network/ByteOrder.o )
+Installing library in /home/heitor/.stack/snapshots/x86_64-linux/lts-13.22/8.6.5/lib/x86_64-linux-ghc-8.6.5/network-byte-order-0.0.0.0-FYkGGM9m2cE2yftojvXtap
+Registering library for network-byte-order-0.0.0.0..

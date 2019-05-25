@@ -1,0 +1,10 @@
+Configuring appar-0.1.8...
+Preprocessing library for appar-0.1.8..
+Building library for appar-0.1.8..
+[1 of 5] Compiling Text.Appar.Input ( Text/Appar/Input.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Text/Appar/Input.o )
+[2 of 5] Compiling Text.Appar.Parser ( Text/Appar/Parser.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Text/Appar/Parser.o )
+[3 of 5] Compiling Text.Appar.LazyByteString ( Text/Appar/LazyByteString.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Text/Appar/LazyByteString.o )
+[4 of 5] Compiling Text.Appar.ByteString ( Text/Appar/ByteString.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Text/Appar/ByteString.o )
+[5 of 5] Compiling Text.Appar.String ( Text/Appar/String.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Text/Appar/String.o )
+Installing library in /home/heitor/.stack/snapshots/x86_64-linux/lts-13.22/8.6.5/lib/x86_64-linux-ghc-8.6.5/appar-0.1.8-GEXCW6eRsA87u3FkbnD06R
+Registering library for appar-0.1.8..

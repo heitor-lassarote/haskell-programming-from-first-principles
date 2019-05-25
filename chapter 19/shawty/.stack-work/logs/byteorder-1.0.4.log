@@ -1,0 +1,6 @@
+Configuring byteorder-1.0.4...
+Preprocessing library for byteorder-1.0.4..
+Building library for byteorder-1.0.4..
+[1 of 1] Compiling System.ByteOrder ( System/ByteOrder.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/System/ByteOrder.o )
+Installing library in /home/heitor/.stack/snapshots/x86_64-linux/lts-13.22/8.6.5/lib/x86_64-linux-ghc-8.6.5/byteorder-1.0.4-IVStE0plZAH4UpHo5zwztw
+Registering library for byteorder-1.0.4..

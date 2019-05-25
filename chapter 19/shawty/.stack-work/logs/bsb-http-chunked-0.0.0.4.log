@@ -1,0 +1,6 @@
+Configuring bsb-http-chunked-0.0.0.4...
+Preprocessing library for bsb-http-chunked-0.0.0.4..
+Building library for bsb-http-chunked-0.0.0.4..
+[1 of 1] Compiling Data.ByteString.Builder.HTTP.Chunked ( Data/ByteString/Builder/HTTP/Chunked.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/ByteString/Builder/HTTP/Chunked.o )
+Installing library in /home/heitor/.stack/snapshots/x86_64-linux/lts-13.22/8.6.5/lib/x86_64-linux-ghc-8.6.5/bsb-http-chunked-0.0.0.4-BCfmq0ia0s9IVjcrN1kyBv
+Registering library for bsb-http-chunked-0.0.0.4..

@@ -1,0 +1,7 @@
+Configuring exceptions-0.10.2...
+Preprocessing library for exceptions-0.10.2..
+Building library for exceptions-0.10.2..
+[1 of 2] Compiling Control.Monad.Catch ( src/Control/Monad/Catch.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Monad/Catch.o )
+[2 of 2] Compiling Control.Monad.Catch.Pure ( src/Control/Monad/Catch/Pure.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Monad/Catch/Pure.o )
+Installing library in /home/heitor/.stack/snapshots/x86_64-linux/lts-13.22/8.6.5/lib/x86_64-linux-ghc-8.6.5/exceptions-0.10.2-965Nx9KftkgCsZ4B7Zhuyu
+Registering library for exceptions-0.10.2..

@@ -1,0 +1,10 @@
+Configuring errors-2.3.0...
+Preprocessing library for errors-2.3.0..
+Building library for errors-2.3.0..
+[1 of 5] Compiling Control.Error.Util ( Control/Error/Util.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Error/Util.o )
+[2 of 5] Compiling Control.Error.Safe ( Control/Error/Safe.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Error/Safe.o )
+[3 of 5] Compiling Data.EitherR     ( Data/EitherR.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/EitherR.o )
+[4 of 5] Compiling Control.Error.Script ( Control/Error/Script.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Error/Script.o )
+[5 of 5] Compiling Control.Error    ( Control/Error.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Control/Error.o )
+Installing library in /home/heitor/.stack/snapshots/x86_64-linux/lts-13.22/8.6.5/lib/x86_64-linux-ghc-8.6.5/errors-2.3.0-7go1iRF9uDHD48qai2p2yp
+Registering library for errors-2.3.0..

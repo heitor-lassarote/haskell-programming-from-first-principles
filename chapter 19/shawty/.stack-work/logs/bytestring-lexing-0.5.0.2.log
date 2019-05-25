@@ -1,0 +1,8 @@
+Configuring bytestring-lexing-0.5.0.2...
+Preprocessing library for bytestring-lexing-0.5.0.2..
+Building library for bytestring-lexing-0.5.0.2..
+[1 of 3] Compiling Data.ByteString.Lex.Internal ( src/Data/ByteString/Lex/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/ByteString/Lex/Internal.o )
+[2 of 3] Compiling Data.ByteString.Lex.Integral ( src/Data/ByteString/Lex/Integral.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/ByteString/Lex/Integral.o )
+[3 of 3] Compiling Data.ByteString.Lex.Fractional ( src/Data/ByteString/Lex/Fractional.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/ByteString/Lex/Fractional.o )
+Installing library in /home/heitor/.stack/snapshots/x86_64-linux/lts-13.22/8.6.5/lib/x86_64-linux-ghc-8.6.5/bytestring-lexing-0.5.0.2-7bzn6kKbt43GLLog46dYmU
+Registering library for bytestring-lexing-0.5.0.2..

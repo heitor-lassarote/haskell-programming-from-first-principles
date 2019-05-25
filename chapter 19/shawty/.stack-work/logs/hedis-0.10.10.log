@@ -1,0 +1,15 @@
+Configuring hedis-0.10.10...
+Preprocessing library for hedis-0.10.10..
+Building library for hedis-0.10.10..
+[ 1 of 10] Compiling Database.Redis.Protocol ( src/Database/Redis/Protocol.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Database/Redis/Protocol.o )
+[ 2 of 10] Compiling Database.Redis.ProtocolPipelining ( src/Database/Redis/ProtocolPipelining.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Database/Redis/ProtocolPipelining.o )
+[ 3 of 10] Compiling Database.Redis.Types ( src/Database/Redis/Types.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Database/Redis/Types.o )
+[ 4 of 10] Compiling Database.Redis.Core ( src/Database/Redis/Core.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Database/Redis/Core.o )
+[ 5 of 10] Compiling Database.Redis.Transactions ( src/Database/Redis/Transactions.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Database/Redis/Transactions.o )
+[ 6 of 10] Compiling Database.Redis.PubSub ( src/Database/Redis/PubSub.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Database/Redis/PubSub.o )
+[ 7 of 10] Compiling Database.Redis.ManualCommands ( src/Database/Redis/ManualCommands.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Database/Redis/ManualCommands.o )
+[ 8 of 10] Compiling Database.Redis.Commands ( src/Database/Redis/Commands.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Database/Redis/Commands.o )
+[ 9 of 10] Compiling Database.Redis.URL ( src/Database/Redis/URL.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Database/Redis/URL.o )
+[10 of 10] Compiling Database.Redis   ( src/Database/Redis.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Database/Redis.o )
+Installing library in /home/heitor/.stack/snapshots/x86_64-linux/lts-13.22/8.6.5/lib/x86_64-linux-ghc-8.6.5/hedis-0.10.10-DwDBGI4DKznK02oQtNmUWU
+Registering library for hedis-0.10.10..

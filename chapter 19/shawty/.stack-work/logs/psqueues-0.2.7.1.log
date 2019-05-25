@@ -1,0 +1,12 @@
+Configuring psqueues-0.2.7.1...
+Preprocessing library for psqueues-0.2.7.1..
+Building library for psqueues-0.2.7.1..
+[1 of 7] Compiling Data.BitUtil     ( src/Data/BitUtil.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/BitUtil.o )
+[2 of 7] Compiling Data.IntPSQ.Internal ( src/Data/IntPSQ/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/IntPSQ/Internal.o )
+[3 of 7] Compiling Data.IntPSQ      ( src/Data/IntPSQ.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/IntPSQ.o )
+[4 of 7] Compiling Data.OrdPSQ.Internal ( src/Data/OrdPSQ/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/OrdPSQ/Internal.o )
+[5 of 7] Compiling Data.OrdPSQ      ( src/Data/OrdPSQ.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/OrdPSQ.o )
+[6 of 7] Compiling Data.HashPSQ.Internal ( src/Data/HashPSQ/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/HashPSQ/Internal.o )
+[7 of 7] Compiling Data.HashPSQ     ( src/Data/HashPSQ.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/HashPSQ.o )
+Installing library in /home/heitor/.stack/snapshots/x86_64-linux/lts-13.22/8.6.5/lib/x86_64-linux-ghc-8.6.5/psqueues-0.2.7.1-AkaCYHfnM5C41IcGTDngSt
+Registering library for psqueues-0.2.7.1..
