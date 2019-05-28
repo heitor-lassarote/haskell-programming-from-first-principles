@@ -1,6 +1,0 @@
-Configuring semigroups-0.18.5...
-Preprocessing library for semigroups-0.18.5..
-Building library for semigroups-0.18.5..
-[1 of 1] Compiling Data.Semigroup.Generic ( src/Data/Semigroup/Generic.hs, .stack-work/dist/x86_64-linux/Cabal-2.4.0.1/build/Data/Semigroup/Generic.o )
-Installing library in /home/heitor/.stack/snapshots/x86_64-linux/lts-13.22/8.6.5/lib/x86_64-linux-ghc-8.6.5/semigroups-0.18.5-6T2lH5F6zyQIdwR3JYKMO3
-Registering library for semigroups-0.18.5..
