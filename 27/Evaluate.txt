@@ -1,0 +1,45 @@
+Exercises: Evaluate
+
+1. const 1 undefined
+    \a _ -> a
+    \1 _ -> 1
+    1
+
+2. const undefined 1
+    \a _ -> a
+    \undefined _ -> undefined
+    undefined
+
+3. flip const undefined 1
+    \_ a -> a
+    \_ 1 -> 1
+    1
+
+4. flip const 1 undefined
+    \_ a -> a
+    \_ undefined -> undefined
+    undefined
+
+5. const undefined undefined
+    \a _ -> a
+    \undefined -> undefined
+    undefined
+
+6. foldr const 'z' ['a'..'e']
+    foldr [] = 'z'
+    foldr ('a':"bcde") = 'a' `const` foldr const 'z' "bcde"
+
+    foldr ('a':"bcde") = 'a'
+    'a'
+
+7. foldr (flip const) 'z' ['a'..'e']
+    foldr [] = 'z'
+    foldr ('a':"bcde") = 'a' `flip const` foldr (flip const) 'z' "bcde"
+
+    foldr ('b':"cde") = 'b' `flip const` foldr (flip const) 'z' "cde"
+    foldr ('c':"de") = 'c' `flip const` foldr (flip const) 'z' "de"
+    foldr ('d':"e") = 'd' `flip const` foldr (flip const) 'z' "e"
+    foldr ('e':"") = 'e' `flip const` foldr (flip const) 'e' ""
+    foldr "" = 'z'
+    'z'
+

@@ -1,0 +1,9 @@
+Exercise: What will :sprint output?
+
+1. x = _, because x is polymorphic.
+2. x = ['1'], because x is concrete.
+3. x = _, because x is polymorphic.
+4. x = 1, because x is concrete.
+5. x = _, because x is wrapped by a function.
+6. x = _, for the same reason.
+

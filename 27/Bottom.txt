@@ -1,0 +1,12 @@
+Exercise: Will printing this expression result in bottom?
+
+1. No, because snd doesn't evaluate the first argument.
+2. Yes, because in order to y get evaluated, it requires evaluating 1, which
+   forces the evaluation of x, which is undefined.
+3. Yes, because the cons operator needs to evaluate the outer structure of the
+   right hand side, but it's undefined.
+4. No, because length only cares about the outer structure, and not its contents.
+5. No, because const doesn't evaluate the second argument.
+6. Same as above. Const doesn't evaluate 1, and so doesn't evaluate undefined.
+7. Yes, because const evaluates its first parameter, so undefined is evaluated.
+
